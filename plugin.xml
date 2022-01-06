@@ -1,0 +1,8 @@
+<library path="lib/libmotion_controllers">
+  <class name="motion_controllers/trajectory_controller" type="motion_controllers::Trajectory_Controller" base_class_type="controller_interface::ControllerBase">
+    <description>Trajectory controller output expected attitude and throlte.</description>
+  </class>
+  <class name="motion_controllers/attitude_controller" type="motion_controllers::AttitudeController" base_class_type="controller_interface::ControllerBase">
+    <description>Attitude controller output force and torque commands to track the desired attitude.</description>
+  </class>
+</library>

@@ -1,0 +1,20 @@
+trajectory_controller:
+    type: motion_controllers/trajectory_controller
+    x: 
+        max: 5.0 #position x range -5 < px < +5
+    y: 
+        max: 5.0 #position y range -5 < py < +5
+    z:
+        max: 0.2 #position z range 0.2 < pz < +6
+        min: -20
+    yaw:         # yaw angle (heading) pid control parameters
+        max: 3.14159
+    linear:
+        max: 5.0 #linear speed absolute value <5m/s
+    io_logpath: "/home/octopus/robot_log.txt"
+
+attitude_controller:
+    type: motion_controllers/attitude_controller
+    max_roll_pitch: 1.5
+    kp: 40
+    kd: 5
